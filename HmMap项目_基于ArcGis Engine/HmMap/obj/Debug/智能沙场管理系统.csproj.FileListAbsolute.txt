@@ -1,0 +1,11 @@
+H:\c#\智能沙场管理系统\智能沙场管理系统\bin\Debug\智能沙场管理系统.exe.config
+H:\c#\智能沙场管理系统\智能沙场管理系统\obj\Debug\智能沙场管理系统.csprojResolveAssemblyReference.cache
+H:\c#\智能沙场管理系统\智能沙场管理系统\obj\Debug\智能沙场管理系统.Form1.resources
+H:\c#\智能沙场管理系统\智能沙场管理系统\obj\Debug\智能沙场管理系统.Form2.resources
+H:\c#\智能沙场管理系统\智能沙场管理系统\obj\Debug\智能沙场管理系统.Properties.Resources.resources
+H:\c#\智能沙场管理系统\智能沙场管理系统\obj\Debug\智能沙场管理系统.csproj.GenerateResource.Cache
+H:\c#\智能沙场管理系统\智能沙场管理系统\bin\Debug\智能沙场管理系统.exe
+H:\c#\智能沙场管理系统\智能沙场管理系统\bin\Debug\智能沙场管理系统.pdb
+H:\c#\智能沙场管理系统\智能沙场管理系统\obj\Debug\智能沙场管理系统.exe
+H:\c#\智能沙场管理系统\智能沙场管理系统\obj\Debug\智能沙场管理系统.pdb
+H:\c#\智能沙场管理系统\智能沙场管理系统\bin\Debug\MySql.Data.dll
