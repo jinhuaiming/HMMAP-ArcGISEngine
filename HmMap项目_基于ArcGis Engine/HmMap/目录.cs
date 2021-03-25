@@ -16,9 +16,12 @@ namespace HmMap
     {
       
         AxMapControl mapcontrol;//index界面，窗体的地图控件；
+        esriTOCControlItem item;
         ToolStripButton toolstripbutton;//index界面，窗体的目录按钮；
         ILayer layer_Toccontrol;//目录界面，目录界面；
         IBasicMap map;//目录界面，数据框；
+        object other;
+        object index;
       
         public 目录(AxMapControl mapcontrol,ToolStripButton  toolstripbutton)
         {
@@ -47,17 +50,11 @@ namespace HmMap
         private void axTOCControl1_OnMouseDown(object sender, ITOCControlEvents_OnMouseDownEvent e)
         {
             if (e.button == 2)
-            {
-                esriTOCControlItem item = esriTOCControlItem.esriTOCControlItemNone;
-                map = new MapClass();
-                layer_Toccontrol = new FeatureLayerClass();
-                object other = new object();
-                object index = new object();
+            {           
                 axTOCControl1.HitTest(e.x, e.y, ref item, ref map, ref layer_Toccontrol, ref other, ref index);
-                if (item == esriTOCControlItem.esriTOCControlItemLayer)
+                if (item == esriTOCControlItem.esriTOCControlItemLayer&&layer_Toccontrol!=null)
                 {
-                    System.Drawing.Point point = new System.Drawing.Point(e.x, e.y);
-                    contextMenuStrip1.Show(axTOCControl1, point);
+                    contextMenuStrip1.Show(Control.MousePosition);
                 }
             }
         }

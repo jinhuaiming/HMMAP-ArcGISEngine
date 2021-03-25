@@ -54,25 +54,26 @@ G:\桌面\HmMap项目\HmMap\bin\Debug\HZH_Controls.dll
 G:\桌面\HmMap项目\HmMap\obj\Debug\HmMap.属性查询.resources
 G:\桌面\HmMap项目\HmMap\obj\Debug\HmMap.csprojAssemblyReference.cache
 G:\桌面\HmMap项目\HmMap\obj\Debug\HmMap.csproj.CoreCompileInputs.cache
-D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\bin\Debug\HmMap.exe.config
-D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.exe
-D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.pdb
-D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.csprojResolveAssemblyReference.cache
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.Distinguish.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.index.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.mysql账号密码.resources
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.PopupField.resources
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.Properties.Resources.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.Property_sheet.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.speck.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.属性查询.resources
-D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.登录.resources
-D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.注册.resources
-D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.Properties.Resources.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.显示.resources
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.注册.resources
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.登录.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.目录.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\bin\Debug\HmMap.exe.config
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\bin\Debug\HmMap.exe
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\bin\Debug\HmMap.pdb
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\bin\Debug\HZH_Controls.dll
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\bin\Debug\MySql.Data.dll
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.exe
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.pdb
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.csprojResolveAssemblyReference.cache

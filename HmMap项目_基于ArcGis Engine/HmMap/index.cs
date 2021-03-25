@@ -22,16 +22,16 @@ namespace HmMap
 {
     public partial class index : Form
     {
-        private  ButtonFunction x;
+        private  ButtonFunction _tool_lable;
         private  ButtonFunction tool_lable//工具箱属性标识；
         {
             get
             {
-                return x;
+                return _tool_lable;
             }
             set
             {
-                x = value;
+                _tool_lable = value;
             }
         }
         public index()
@@ -56,7 +56,7 @@ namespace HmMap
         //主页加载函数；
         private void index_Load(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.roam;
+            this._tool_lable = ButtonFunction.roam;
             Form content = new 目录(axMapControl1, toolStripButton6);
             content.Show();
             toolStripButton6.Enabled = false;
@@ -89,7 +89,7 @@ namespace HmMap
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
 
-            this.tool_lable =ButtonFunction.roam;
+            this._tool_lable =ButtonFunction.roam;
 
             openFileDialog1.Title = "打开文件";
             openFileDialog1.Filter = "矢量文件(*.shp)|*.shp|ArcMap工程文件(*.mxd)|*.mxd|栅格影像文件|*.bmp;*.tif;*.img;*.jpg";
@@ -163,14 +163,14 @@ namespace HmMap
         //漫游工具;
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.roam;
+            this._tool_lable = ButtonFunction.roam;
         }
 
         //地图控件鼠标点击事件；;
         private void axMapControl1_OnMouseDown(object sender, ESRI.ArcGIS.Controls.IMapControlEvents2_OnMouseDownEvent e)
         {
 
-            switch (this.tool_lable)
+            switch (this._tool_lable)
             {
                 //漫游
                 case ButtonFunction.roam: axMapControl1.Pan(); break;
@@ -243,20 +243,20 @@ namespace HmMap
         //全图显示工具；
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.roam;
+            this._tool_lable = ButtonFunction.roam;
             axMapControl1.Extent = axMapControl1.FullExtent;
         }
 
         //测量工具;
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.measure;
+            this._tool_lable = ButtonFunction.measure;
         }
 
         //保存工具;
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.roam;
+            this._tool_lable = ButtonFunction.roam;
             //检测是否加载图层；
             if (axMapControl1.LayerCount == 0)
             {
@@ -328,13 +328,13 @@ namespace HmMap
         //要素识别事件
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.distinguish;
+            this._tool_lable = ButtonFunction.distinguish;
         }
 
         //清除地图控件选择的数据；
         private void toolStripButton8_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.roam;
+            this._tool_lable = ButtonFunction.roam;
             IActiveView ActiveView = axMapControl1.ActiveView;
             ActiveView.FocusMap.ClearSelection();
             ActiveView.PartialRefresh(esriViewDrawPhase.esriViewGeoSelection,null,ActiveView.Extent);
@@ -343,38 +343,38 @@ namespace HmMap
         //按位置选择
         private void 按圆选择ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.TrackCircle;
+            this._tool_lable = ButtonFunction.TrackCircle;
 
         }
 
         //按位置选择
         private void 按路径选择ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.TrackLine;
+            this._tool_lable = ButtonFunction.TrackLine;
         }
 
         //按位置选择
         private void 按矩形框选择ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.TrackPolygon;
+            this._tool_lable = ButtonFunction.TrackPolygon;
         }
 
         //按位置选择
         private void anToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.TrackRectangle;
+            this._tool_lable = ButtonFunction.TrackRectangle;
         }
 
         //局部放大功能
         private void toolStripButton9_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.enlarge;
+            this._tool_lable = ButtonFunction.enlarge;
         }
 
         //局部缩小功能
         private void toolStripButton10_Click(object sender, EventArgs e)
         {
-            this.tool_lable = ButtonFunction.narrow;
+            this._tool_lable = ButtonFunction.narrow;
         }
 
        //打开属性查询页面

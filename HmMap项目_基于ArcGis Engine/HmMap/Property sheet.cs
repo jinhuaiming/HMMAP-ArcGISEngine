@@ -18,6 +18,11 @@ namespace HmMap
         private ILayer layer;//index界面，传回的选定的图层；
         private string tablenmae;//index界面，传回的选定的图层的名字；
         ToolStripMenuItem toolStripMenuItem;//目录界面的选定按钮对象；
+
+        public static string FieldName;//字段名称；
+        public static esriFieldType FieldType;//字段数据类型；
+        public static int FieldLength;//字段数据长度；
+
         public Property_sheet(ILayer layer, string TableName, ToolStripMenuItem toolStripMenuItem)
         {
             InitializeComponent();
@@ -101,11 +106,32 @@ namespace HmMap
         {
             toolStripMenuItem.Enabled = true;
         }
-        #endregion
+
+        //添加字段；
+        private void 添加字段ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IFeatureLayer player = layer as IFeatureLayer;
+            IFeatureClass pfeatureclass = player.FeatureClass;
+            PopupField pf = new PopupField();
+            pf.ShowDialog();
+
+            if (FieldName!=string.Empty&&FieldType!=null&&FieldLength!=null)
+            {
+                IFieldEdit fe = new FieldClass();
+                fe.Name_2 = FieldName;
+                fe.Type_2 = FieldType;
+                fe.Length_2 = FieldLength;
+                pfeatureclass.AddField(fe as IField);
+            }
+        }
+
+       // 按属性选择
+        private void 按属性选择ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("功能尚未完善");
+        }
 
         #region 方法
-       
-
         #region 打开属性表
 
         //创建带字段空表；
@@ -255,14 +281,11 @@ namespace HmMap
             }
 
         }
+        #endregion  
         #endregion
 
-        #region 按属性选择
-        private void 按属性选择ToolStripMenuItem_Click(object sender, EventArgs e)
-        {           
-            MessageBox.Show("功能尚未完善");
-        }
-        #endregion
+    
+
         #endregion
     }
 }

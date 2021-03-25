@@ -42,6 +42,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.按属性选择ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加字段ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -98,10 +99,11 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(986, 523);
+            this.dataGridView1.Size = new System.Drawing.Size(876, 427);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
@@ -116,11 +118,13 @@
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.dataGridView2);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.dataGridView1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(986, 523);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(876, 427);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(986, 573);
+            this.toolStripContainer1.Size = new System.Drawing.Size(876, 477);
             this.toolStripContainer1.TabIndex = 0;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -150,10 +154,11 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 30;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(986, 523);
+            this.dataGridView2.Size = new System.Drawing.Size(876, 427);
             this.dataGridView2.TabIndex = 1;
             // 
             // toolStrip1
@@ -172,7 +177,8 @@
             // 
             this.toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripSplitButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.按属性选择ToolStripMenuItem});
+            this.按属性选择ToolStripMenuItem,
+            this.添加字段ToolStripMenuItem});
             this.toolStripSplitButton1.Image = global::HmMap.Properties.Resources.选择;
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
@@ -184,9 +190,16 @@
             // 
             this.按属性选择ToolStripMenuItem.Image = global::HmMap.Properties.Resources.按属性选择1;
             this.按属性选择ToolStripMenuItem.Name = "按属性选择ToolStripMenuItem";
-            this.按属性选择ToolStripMenuItem.Size = new System.Drawing.Size(170, 28);
+            this.按属性选择ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.按属性选择ToolStripMenuItem.Text = "按属性选择";
             this.按属性选择ToolStripMenuItem.Click += new System.EventHandler(this.按属性选择ToolStripMenuItem_Click);
+            // 
+            // 添加字段ToolStripMenuItem
+            // 
+            this.添加字段ToolStripMenuItem.Name = "添加字段ToolStripMenuItem";
+            this.添加字段ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.添加字段ToolStripMenuItem.Text = "添加字段";
+            this.添加字段ToolStripMenuItem.Click += new System.EventHandler(this.添加字段ToolStripMenuItem_Click);
             // 
             // toolStripButton1
             // 
@@ -212,19 +225,19 @@
             // 
             // Property_sheet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(986, 573);
+            this.ClientSize = new System.Drawing.Size(876, 477);
             this.Controls.Add(this.toolStripContainer1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimizeBox = false;
             this.Name = "Property_sheet";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "属性表";
-            this.TopMost = true;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Property_sheet_FormClosed);
             this.Load += new System.EventHandler(this.Property_sheet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -261,6 +274,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.ToolStripMenuItem 添加字段ToolStripMenuItem;
 
     }
 }

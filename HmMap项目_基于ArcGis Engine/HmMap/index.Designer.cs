@@ -30,7 +30,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(index));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,10 +63,6 @@
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -76,7 +71,6 @@
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
             this.toolStrip1.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -221,7 +215,7 @@
             this.toolStripLabel2,
             this.toolStripSeparator1,
             this.toolStripLabel1});
-            this.toolStrip2.Location = new System.Drawing.Point(1157, 0);
+            this.toolStrip2.Location = new System.Drawing.Point(1126, 0);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.Size = new System.Drawing.Size(18, 25);
             this.toolStrip2.TabIndex = 1;
@@ -271,7 +265,7 @@
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(273, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(242, 25);
             this.toolStrip1.TabIndex = 0;
             // 
             // toolStripButton1
@@ -385,33 +379,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(124, 76);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(123, 24);
-            this.toolStripMenuItem3.Text = "全图";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(123, 24);
-            this.toolStripMenuItem1.Text = "移除";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(123, 24);
-            this.toolStripMenuItem2.Text = "属性表";
-            // 
             // index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -442,7 +409,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -468,10 +434,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private ESRI.ArcGIS.Controls.AxMapControl axMapControl1;
         private System.Windows.Forms.ToolStripMenuItem 另存为ToolStripMenuItem;
