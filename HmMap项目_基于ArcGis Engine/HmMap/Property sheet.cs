@@ -14,14 +14,14 @@ namespace HmMap
 {
     public partial class Property_sheet : Form
     {
-        
+
         private ILayer layer;//index界面，传回的选定的图层；
         private string tablenmae;//index界面，传回的选定的图层的名字；
-        ToolStripMenuItem toolStripMenuItem;//目录界面的选定按钮对象；
-
+        private ToolStripMenuItem toolStripMenuItem;//目录界面的选定按钮对象；
         public static string FieldName;//字段名称；
-        public static esriFieldType FieldType;//字段数据类型；
-        public static int FieldLength;//字段数据长度；
+        public static esriFieldType FieldType=esriFieldType.esriFieldTypeSingle;//字段数据类型；
+        public static int FieldLength=6;//字段数据长度；
+        private int DataGridiewColumnsIndex;
 
         public Property_sheet(ILayer layer, string TableName, ToolStripMenuItem toolStripMenuItem)
         {
@@ -115,23 +115,27 @@ namespace HmMap
             PopupField pf = new PopupField();
             pf.ShowDialog();
 
-            if (FieldName!=string.Empty&&FieldType!=null&&FieldLength!=null)
+            if (FieldName != null)
             {
                 IFieldEdit fe = new FieldClass();
                 fe.Name_2 = FieldName;
                 fe.Type_2 = FieldType;
                 fe.Length_2 = FieldLength;
                 pfeatureclass.AddField(fe as IField);
+
+                FieldName = null;
+                FieldType = esriFieldType.esriFieldTypeSingle;
+                FieldLength = 6;
             }
         }
 
-       // 按属性选择
+        // 按属性选择
         private void 按属性选择ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("功能尚未完善");
         }
 
-        #region 方法
+
         #region 打开属性表
 
         //创建带字段空表；
@@ -281,10 +285,34 @@ namespace HmMap
             }
 
         }
-        #endregion  
         #endregion
 
-    
+        //删除字段事件；
+        private void 删除字段ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string FieldName_1 = this.dataGridView1.Columns[DataGridiewColumnsIndex].HeaderText;
+            IFeatureLayer pfeaturelayer = layer as IFeatureLayer;
+            IFeatureClass pfeatureclass = pfeaturelayer.FeatureClass;
+            int index = pfeatureclass.FindField(FieldName_1);
+            IFields pfields = pfeatureclass.Fields;
+            IField pfield = pfields.get_Field(index);
+            if ( MessageBox.Show("确认删除吗","提示" , MessageBoxButtons.YesNo)==DialogResult.Yes)
+            {
+                pfeatureclass.DeleteField(pfield);
+            }         
+        }
+
+        //datagridview列头右击菜单事件；
+        private void dataGridView1_CellContextMenuStripNeeded(object sender, DataGridViewCellContextMenuStripNeededEventArgs e)
+        {
+            DataGridView dgv = (DataGridView)sender;      
+            if (e.RowIndex < 0)
+            {
+                e.ContextMenuStrip = this.contextMenuStrip1;
+                DataGridiewColumnsIndex = e.ColumnIndex;
+            }
+        }
+
 
         #endregion
     }

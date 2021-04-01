@@ -138,6 +138,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attribute.Designer.cs">
+      <DependentUpon>Attribute.cs</DependentUpon>
+    </Compile>
     <Compile Include="Distinguish.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,13 +168,13 @@
     <Compile Include="PopupField.Designer.cs">
       <DependentUpon>PopupField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Property sheet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     <Compile Include="目录.Designer.cs">
       <DependentUpon>目录.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Attribute.resx">
+      <DependentUpon>Attribute.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Distinguish.resx">
       <DependentUpon>Distinguish.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +287,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="earth-moon.ico" />
+    <Content Include="Resources\任务.png" />
     <Content Include="Resources\字段.png" />
     <None Include="Resources\缩小.png" />
     <None Include="Resources\放大.png" />

@@ -121,26 +121,26 @@
   <data name="按属性选择1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\按属性选择.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="属性表" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\属性表.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="识别1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\识别.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="保存 面性1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\保存 面性.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="参数" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\参数.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="清楚缓存" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\清楚缓存.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="属性表" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\属性表.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="字段" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\字段.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="保存 面性" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\保存 面性.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="手掌" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\手掌.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="参数" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\参数.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="已选中" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\已选中.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,6 +156,9 @@
   </data>
   <data name="选 中" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\选 中.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="手掌" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\手掌.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="显示全图" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\显示全图.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,7 +193,7 @@
   <data name="房子33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\房子33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="字段" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\字段.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="任务" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\任务.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

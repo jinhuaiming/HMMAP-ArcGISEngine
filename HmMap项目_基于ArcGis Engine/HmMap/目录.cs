@@ -30,7 +30,6 @@ namespace HmMap
             this.toolstripbutton = toolstripbutton;
         }
 
-        #region 事件
         //窗体加载事件
         private void 目录_Load(object sender, EventArgs e)
         {
@@ -43,9 +42,7 @@ namespace HmMap
             toolstripbutton.Enabled = true;
         }
 
-        #endregion
 
-        #region ACTOOCONTROL右键功能;
         //ACTOOCONTROL右键功能；
         private void axTOCControl1_OnMouseDown(object sender, ITOCControlEvents_OnMouseDownEvent e)
         {
@@ -82,14 +79,19 @@ namespace HmMap
 
         //缩放至图层；
         private void 缩放至ToolStripMenuItem_Click(object sender, EventArgs e)
-        {         
-            
+        {                   
             if (layer_Toccontrol == null) return;
             (mapcontrol.Map as IActiveView).Extent = layer_Toccontrol.AreaOfInterest;
             (mapcontrol.Map as IActiveView).PartialRefresh(esriViewDrawPhase.esriViewGraphics,null,null);
         }
-        #endregion
 
-      
+        //打开属性
+        private void 属性ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (layer_Toccontrol == null) return;
+            Form  pattribute = new Attribute(mapcontrol, layer_Toccontrol, ToolStripMenuItem4);
+            ToolStripMenuItem4.Enabled = false;
+            pattribute.ShowDialog();      
+        }     
     }
 }

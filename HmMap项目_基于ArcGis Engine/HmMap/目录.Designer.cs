@@ -33,7 +33,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.缩放至ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.axTOCControl1 = new ESRI.ArcGIS.Controls.AxTOCControl();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).BeginInit();
@@ -44,15 +45,16 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripMenuItem2,
-            this.缩放至ToolStripMenuItem});
+            this.ToolStripMenuItem3,
+            this.ToolStripMenuItem4});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 98);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(124, 100);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Image = global::HmMap.Properties.Resources.移除;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(123, 24);
             this.toolStripMenuItem1.Text = "移除";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.remov_layer);
             // 
@@ -60,17 +62,25 @@
             // 
             this.toolStripMenuItem2.Image = global::HmMap.Properties.Resources.属性表;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(123, 24);
             this.toolStripMenuItem2.Text = "属性表";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.show_sheet);
             // 
-            // 缩放至ToolStripMenuItem
+            // ToolStripMenuItem3
             // 
-            this.缩放至ToolStripMenuItem.Image = global::HmMap.Properties.Resources.显示全图;
-            this.缩放至ToolStripMenuItem.Name = "缩放至ToolStripMenuItem";
-            this.缩放至ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.缩放至ToolStripMenuItem.Text = "缩放至";
-            this.缩放至ToolStripMenuItem.Click += new System.EventHandler(this.缩放至ToolStripMenuItem_Click);
+            this.ToolStripMenuItem3.Image = global::HmMap.Properties.Resources.显示全图;
+            this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
+            this.ToolStripMenuItem3.Size = new System.Drawing.Size(123, 24);
+            this.ToolStripMenuItem3.Text = "缩放至";
+            this.ToolStripMenuItem3.Click += new System.EventHandler(this.缩放至ToolStripMenuItem_Click);
+            // 
+            // ToolStripMenuItem4
+            // 
+            this.ToolStripMenuItem4.Image = global::HmMap.Properties.Resources.任务;
+            this.ToolStripMenuItem4.Name = "ToolStripMenuItem4";
+            this.ToolStripMenuItem4.Size = new System.Drawing.Size(123, 24);
+            this.ToolStripMenuItem4.Text = "属性";
+            this.ToolStripMenuItem4.Click += new System.EventHandler(this.属性ToolStripMenuItem_Click);
             // 
             // axTOCControl1
             // 
@@ -110,6 +120,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl1;
-        private System.Windows.Forms.ToolStripMenuItem 缩放至ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem4;
     }
 }

@@ -63,6 +63,16 @@ namespace HmMap.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 任务 {
+            get {
+                object obj = ResourceManager.GetObject("任务", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 保存_面性 {
             get {
                 object obj = ResourceManager.GetObject("保存 面性", resourceCulture);

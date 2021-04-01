@@ -77,3 +77,4 @@ D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis En
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.exe
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.pdb
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.Attribute.resources
