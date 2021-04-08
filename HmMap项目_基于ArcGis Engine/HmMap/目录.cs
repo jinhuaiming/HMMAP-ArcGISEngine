@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Controls;
-
+using ESRI.ArcGIS.Display;
+using ESRI.ArcGIS.Geometry;
 namespace HmMap
 {
     public partial class 目录 : Form
@@ -22,7 +23,13 @@ namespace HmMap
         IBasicMap map;//目录界面，数据框；
         object other;
         object index;
-      
+        esriGeometryType pesriGeometryTyp;//判断图层的点线面类型；
+        //点符号类型；
+       public  static esriSimpleMarkerStyle pesriSimpleMarkerStyle;
+       public static IColor pcolor;
+       public static double size;
+       public static double angle;
+
         public 目录(AxMapControl mapcontrol,ToolStripButton  toolstripbutton)
         {
             InitializeComponent();
@@ -51,6 +58,8 @@ namespace HmMap
                 axTOCControl1.HitTest(e.x, e.y, ref item, ref map, ref layer_Toccontrol, ref other, ref index);
                 if (item == esriTOCControlItem.esriTOCControlItemLayer&&layer_Toccontrol!=null)
                 {
+                    IFeatureLayer pfeature = layer_Toccontrol as IFeatureLayer;
+                    this.pesriGeometryTyp = pfeature.FeatureClass.ShapeType;
                     contextMenuStrip1.Show(Control.MousePosition);
                 }
             }
@@ -92,6 +101,47 @@ namespace HmMap
             Form  pattribute = new Attribute(mapcontrol, layer_Toccontrol, ToolStripMenuItem4);
             ToolStripMenuItem4.Enabled = false;
             pattribute.ShowDialog();      
+        }
+
+        //打开符号系统界面；
+        private void 修改符号ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            switch (pesriGeometryTyp)
+            {
+                case esriGeometryType.esriGeometryPoint:
+                    ToolStripMenuItem5.Enabled = false;
+                    IGeoFeatureLayer pGeoFeatureLayer = layer_Toccontrol as IGeoFeatureLayer;
+                    ISimpleMarkerSymbol pSimpleMarkerSymbol = new SimpleMarkerSymbolClass();
+
+                    ISimpleRenderer ppSimpleRenderer = pGeoFeatureLayer.Renderer as ISimpleRenderer;
+                     ISimpleMarkerSymbol ppSymbol = ppSimpleRenderer.Symbol as ISimpleMarkerSymbol;
+                     size = ppSymbol.Size;
+                     pcolor = ppSymbol.Color;
+                     angle = ppSymbol.Angle;
+
+                    //选择符号的大小，颜色，符号类型
+                    Form symbol = new symbol(ToolStripMenuItem5,pcolor,size,angle);
+                    symbol.ShowDialog();
+
+                    pSimpleMarkerSymbol.Size = size;
+                    pSimpleMarkerSymbol.Color = pcolor;
+                    pSimpleMarkerSymbol.Style = esriSimpleMarkerStyle.esriSMSCircle;
+                    pSimpleMarkerSymbol.Angle = angle;
+
+                    ISimpleRenderer pSimpleRenderer = new SimpleRenderer();
+                    pSimpleRenderer.Symbol = pSimpleMarkerSymbol as ISymbol;
+
+                    pGeoFeatureLayer.Renderer = pSimpleRenderer as IFeatureRenderer;
+
+                    mapcontrol.Refresh();
+                    axTOCControl1.Update();
+                    break;
+                default: break;
+            }
+
+
+           
+           
         }     
     }
 }

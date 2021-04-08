@@ -83,7 +83,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -187,6 +187,12 @@
     <Compile Include="speck.Designer.cs">
       <DependentUpon>speck.cs</DependentUpon>
     </Compile>
+    <Compile Include="symbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="symbol.Designer.cs">
+      <DependentUpon>symbol.cs</DependentUpon>
+    </Compile>
     <Compile Include="属性查询.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,9 @@
     <EmbeddedResource Include="speck.resx">
       <DependentUpon>speck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="symbol.resx">
+      <DependentUpon>symbol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="属性查询.resx">
       <DependentUpon>属性查询.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +298,7 @@
     <Content Include="earth-moon.ico" />
     <Content Include="Resources\任务.png" />
     <Content Include="Resources\字段.png" />
+    <None Include="Resources\符号.png" />
     <None Include="Resources\缩小.png" />
     <None Include="Resources\放大.png" />
     <None Include="Resources\清除.png" />

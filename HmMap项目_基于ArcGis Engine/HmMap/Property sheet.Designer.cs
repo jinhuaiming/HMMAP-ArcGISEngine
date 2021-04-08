@@ -233,12 +233,12 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.删除字段ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 50);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(139, 28);
             // 
             // 删除字段ToolStripMenuItem
             // 
             this.删除字段ToolStripMenuItem.Name = "删除字段ToolStripMenuItem";
-            this.删除字段ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.删除字段ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.删除字段ToolStripMenuItem.Text = "删除字段";
             this.删除字段ToolStripMenuItem.Click += new System.EventHandler(this.删除字段ToolStripMenuItem_Click);
             // 

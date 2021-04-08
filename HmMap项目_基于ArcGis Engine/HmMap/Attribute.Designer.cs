@@ -86,7 +86,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1057, 481);
+            this.tabPage2.Size = new System.Drawing.Size(1057, 467);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "字段";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Attribute";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "属性";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Attribute_FormClosed);
             this.splitContainer1.Panel1.ResumeLayout(false);
