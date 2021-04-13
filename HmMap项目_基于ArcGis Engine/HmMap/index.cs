@@ -476,6 +476,12 @@ namespace HmMap
 
             return datatable;
         }
+
+        private void 鹰眼ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form p = new EagleEye(axMapControl1,this);
+            p.Show();
+        }
     }
         #endregion
 

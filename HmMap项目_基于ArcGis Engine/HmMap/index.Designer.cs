@@ -63,6 +63,8 @@
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.鹰眼ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -79,6 +81,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.文件ToolStripMenuItem,
             this.选择ToolStripMenuItem,
+            this.工具ToolStripMenuItem,
             this.日记ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -379,6 +382,21 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // 工具ToolStripMenuItem
+            // 
+            this.工具ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.鹰眼ToolStripMenuItem});
+            this.工具ToolStripMenuItem.Name = "工具ToolStripMenuItem";
+            this.工具ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.工具ToolStripMenuItem.Text = "工具";
+            // 
+            // 鹰眼ToolStripMenuItem
+            // 
+            this.鹰眼ToolStripMenuItem.Name = "鹰眼ToolStripMenuItem";
+            this.鹰眼ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.鹰眼ToolStripMenuItem.Text = "鹰眼";
+            this.鹰眼ToolStripMenuItem.Click += new System.EventHandler(this.鹰眼ToolStripMenuItem_Click);
+            // 
             // index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -448,5 +466,7 @@
         private System.Windows.Forms.ToolStripMenuItem 按属性选择ToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton9;
         private System.Windows.Forms.ToolStripButton toolStripButton10;
+        private System.Windows.Forms.ToolStripMenuItem 工具ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 鹰眼ToolStripMenuItem;
     }
 }

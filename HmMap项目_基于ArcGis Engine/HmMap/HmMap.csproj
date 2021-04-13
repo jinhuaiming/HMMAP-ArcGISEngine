@@ -150,6 +150,12 @@
     <Compile Include="Distinguish.Designer.cs">
       <DependentUpon>Distinguish.cs</DependentUpon>
     </Compile>
+    <Compile Include="EagleEye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EagleEye.Designer.cs">
+      <DependentUpon>EagleEye.cs</DependentUpon>
+    </Compile>
     <Compile Include="index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Distinguish.resx">
       <DependentUpon>Distinguish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EagleEye.resx">
+      <DependentUpon>EagleEye.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.cs</DependentUpon>
