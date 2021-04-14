@@ -1,4 +1,0 @@
-每一次文件夹，对应这git上的一个项目
-git add ./
-git commit -m "updata"
-git push

@@ -17,7 +17,7 @@ namespace HmMap
     public partial class 属性查询 : Form
     {
         private AxMapControl axmapcontrol;
-
+        ILayer SelectLayer;
         public 属性查询(AxMapControl axmapcontrol)
         {
             this.axmapcontrol = axmapcontrol;
@@ -34,15 +34,21 @@ namespace HmMap
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
+            listView1.Items.Clear();
             for (int i = 0; i < axmapcontrol.LayerCount; i++)
             {
-                if (axmapcontrol.get_Layer(i).Name == comboBox1.SelectedText)
+                if (axmapcontrol.get_Layer(i).Name ==comboBox1.SelectedItem.ToString())
                 {
-                    ITable table = axmapcontrol.get_Layer(i) as ITable;
+                    //选中的图层
+                    SelectLayer = axmapcontrol.get_Layer(i);
+
+                    //图层的字段遍历到listview1中；
+                    ITable table = SelectLayer as ITable;
                     for (int j = 0; j < table.Fields.FieldCount; j++)
                     {
-                        listView1.Items.Add(table.Fields.Field[i].Name);
+                         listView1.Items.Add(table.Fields.Field[j].Name);
                     }
+                    break;
                 }
             }
         }
