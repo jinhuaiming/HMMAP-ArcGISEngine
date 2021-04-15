@@ -42,8 +42,13 @@
             this.按矩形框选择ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.按属性选择ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.鹰眼ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.日记ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.数据修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.按位置查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
@@ -63,8 +68,6 @@
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.鹰眼ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -82,7 +85,8 @@
             this.文件ToolStripMenuItem,
             this.选择ToolStripMenuItem,
             this.工具ToolStripMenuItem,
-            this.日记ToolStripMenuItem});
+            this.日记ToolStripMenuItem,
+            this.查询ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -118,7 +122,8 @@
             // 
             this.选择ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.按位置选择ToolStripMenuItem,
-            this.按属性选择ToolStripMenuItem});
+            this.按属性选择ToolStripMenuItem,
+            this.ToolStripMenuItem1});
             this.选择ToolStripMenuItem.Name = "选择ToolStripMenuItem";
             this.选择ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.选择ToolStripMenuItem.Text = "选择";
@@ -131,8 +136,8 @@
             this.按矩形框选择ToolStripMenuItem,
             this.anToolStripMenuItem});
             this.按位置选择ToolStripMenuItem.Name = "按位置选择ToolStripMenuItem";
-            this.按位置选择ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
-            this.按位置选择ToolStripMenuItem.Text = "按位置选择";
+            this.按位置选择ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.按位置选择ToolStripMenuItem.Text = "按几何形状选择";
             // 
             // 按圆选择ToolStripMenuItem
             // 
@@ -165,9 +170,31 @@
             // 按属性选择ToolStripMenuItem
             // 
             this.按属性选择ToolStripMenuItem.Name = "按属性选择ToolStripMenuItem";
-            this.按属性选择ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.按属性选择ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
             this.按属性选择ToolStripMenuItem.Text = "按属性选择";
             this.按属性选择ToolStripMenuItem.Click += new System.EventHandler(this.按属性选择ToolStripMenuItem_Click);
+            // 
+            // ToolStripMenuItem1
+            // 
+            this.ToolStripMenuItem1.Name = "ToolStripMenuItem1";
+            this.ToolStripMenuItem1.Size = new System.Drawing.Size(183, 24);
+            this.ToolStripMenuItem1.Text = "按位置选择";
+            this.ToolStripMenuItem1.Click += new System.EventHandler(this.按位置选择ToolStripMenuItem1_Click);
+            // 
+            // 工具ToolStripMenuItem
+            // 
+            this.工具ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.鹰眼ToolStripMenuItem});
+            this.工具ToolStripMenuItem.Name = "工具ToolStripMenuItem";
+            this.工具ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.工具ToolStripMenuItem.Text = "工具";
+            // 
+            // 鹰眼ToolStripMenuItem
+            // 
+            this.鹰眼ToolStripMenuItem.Name = "鹰眼ToolStripMenuItem";
+            this.鹰眼ToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            this.鹰眼ToolStripMenuItem.Text = "鹰眼";
+            this.鹰眼ToolStripMenuItem.Click += new System.EventHandler(this.鹰眼ToolStripMenuItem_Click);
             // 
             // 日记ToolStripMenuItem
             // 
@@ -183,6 +210,21 @@
             this.数据修改ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
             this.数据修改ToolStripMenuItem.Text = "管理员账号查询";
             this.数据修改ToolStripMenuItem.Click += new System.EventHandler(this.数据修改ToolStripMenuItem_Click);
+            // 
+            // 查询ToolStripMenuItem
+            // 
+            this.查询ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.按位置查询ToolStripMenuItem});
+            this.查询ToolStripMenuItem.Name = "查询ToolStripMenuItem";
+            this.查询ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.查询ToolStripMenuItem.Text = "查询";
+            // 
+            // 按位置查询ToolStripMenuItem
+            // 
+            this.按位置查询ToolStripMenuItem.Name = "按位置查询ToolStripMenuItem";
+            this.按位置查询ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.按位置查询ToolStripMenuItem.Text = "按位置查询";
+            this.按位置查询ToolStripMenuItem.Click += new System.EventHandler(this.按位置查询ToolStripMenuItem_Click);
             // 
             // toolStripContainer1
             // 
@@ -249,6 +291,7 @@
             this.axMapControl1.TabIndex = 0;
             this.axMapControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseDownEventHandler(this.axMapControl1_OnMouseDown);
             this.axMapControl1.OnMouseMove += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseMoveEventHandler(this.axMapControl1_OnMouseMove);
+            this.axMapControl1.OnViewRefreshed += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnViewRefreshedEventHandler(this.axMapControl1_OnViewRefreshed);
             // 
             // toolStrip1
             // 
@@ -382,21 +425,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // 工具ToolStripMenuItem
-            // 
-            this.工具ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.鹰眼ToolStripMenuItem});
-            this.工具ToolStripMenuItem.Name = "工具ToolStripMenuItem";
-            this.工具ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
-            this.工具ToolStripMenuItem.Text = "工具";
-            // 
-            // 鹰眼ToolStripMenuItem
-            // 
-            this.鹰眼ToolStripMenuItem.Name = "鹰眼ToolStripMenuItem";
-            this.鹰眼ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.鹰眼ToolStripMenuItem.Text = "鹰眼";
-            this.鹰眼ToolStripMenuItem.Click += new System.EventHandler(this.鹰眼ToolStripMenuItem_Click);
-            // 
             // index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -468,5 +496,8 @@
         private System.Windows.Forms.ToolStripButton toolStripButton10;
         private System.Windows.Forms.ToolStripMenuItem 工具ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 鹰眼ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 按位置查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem1;
     }
 }

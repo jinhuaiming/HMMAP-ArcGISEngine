@@ -187,6 +187,12 @@
     <Compile Include="Property sheet.Designer.cs">
       <DependentUpon>Property sheet.cs</DependentUpon>
     </Compile>
+    <Compile Include="SelectByLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectByLocation.Designer.cs">
+      <DependentUpon>SelectByLocation.cs</DependentUpon>
+    </Compile>
     <Compile Include="speck.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Property sheet.resx">
       <DependentUpon>Property sheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectByLocation.resx">
+      <DependentUpon>SelectByLocation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="speck.resx">
       <DependentUpon>speck.cs</DependentUpon>

@@ -60,6 +60,8 @@ namespace HmMap
             Form content = new 目录(axMapControl1, toolStripButton6);
             content.Show();
             toolStripButton6.Enabled = false;
+
+            ToolStripMenuItem1.Enabled = false;
         }
         //退出;
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -157,7 +159,7 @@ namespace HmMap
                 MessageBox.Show("文件打开失败!");
                 return;
             }
-
+            axMapControl1.Refresh();
         }
 
         //漫游工具;
@@ -384,6 +386,7 @@ namespace HmMap
             attribute_find.ShowDialog();
         }
         #endregion
+
         #region 方法
         //获取当前地图单位；
         private string GetMapUnits(AxMapControl aa)
@@ -482,23 +485,46 @@ namespace HmMap
             Form p = new EagleEye(axMapControl1,this);
             p.Show();
         }
+
+        private void 按位置查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IFeatureLayer pyuan = axMapControl1.get_Layer(0) as IFeatureLayer;//第一个图层，圆。
+            IFeatureLayer ppoint = axMapControl1.get_Layer(1) as IFeatureLayer;//第二个图层，点。
+            IFeatureSelection ptioa = pyuan as IFeatureSelection;//源图层
+
+            IFeatureCursor pFeatureCursor = ppoint.FeatureClass.Search(null,true);
+            IFeature pFeature=pFeatureCursor.NextFeature();
+            ISpatialFilter pSpatialFilter = new SpatialFilterClass();    
+
+            while(pFeature!=null){
+                IGeometry pGeometry = pFeature.Shape;
+                pSpatialFilter.Geometry = pGeometry;
+                pSpatialFilter.SpatialRel = esriSpatialRelEnum.esriSpatialRelContains;
+                ptioa.SelectFeatures(pSpatialFilter as IQueryFilter, esriSelectionResultEnum.esriSelectionResultXOR, true);
+                pFeature = pFeatureCursor.NextFeature();
+            }
+            axMapControl1.Refresh();
+        }
+
+        private void 按位置选择ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+                SelectByLocation pSelectByLocation = new SelectByLocation(axMapControl1);
+                pSelectByLocation.ShowDialog();
+        }
+
+        private void axMapControl1_OnViewRefreshed(object sender, IMapControlEvents2_OnViewRefreshedEvent e)
+        {
+            if (axMapControl1.LayerCount>1)
+	            {
+		             ToolStripMenuItem1.Enabled=true;
+	            }
+            else
+            {
+                ToolStripMenuItem1.Enabled = false;
+            }
+        }
+
+        }
     }
         #endregion
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
