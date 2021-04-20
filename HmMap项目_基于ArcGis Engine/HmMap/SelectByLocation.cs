@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Geodatabase;
+
 namespace HmMap
 {
     public partial class SelectByLocation : Form
@@ -28,7 +29,61 @@ namespace HmMap
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("功能正在完善中>>>>>");
+            //获取目标图层；
+            IFeatureLayer[] player=new IFeatureLayer[5];
+            int counter=0;
+
+            for (int i = 0; i < checkedListBox1.CheckedItems.Count; i++)
+            {
+                for (int j = 0; j < pmapcontrol.LayerCount; j++)
+                {
+                    if (checkedListBox1.CheckedItems[i].ToString()==pmapcontrol.get_Layer(j).Name)
+                    {
+                        player[counter++] = pmapcontrol.get_Layer(j) as IFeatureLayer;
+                    }
+                }
+            }
+         
+
+            // 获取源图层；       
+            IFeatureLayer pyuanLyaer=null;
+            for (int k = 0; k < pmapcontrol.LayerCount; k++)
+            {
+                if (comboBox1.GetItemText(comboBox1.SelectedItem)==pmapcontrol.get_Layer(k).Name)
+                {
+                    pyuanLyaer = pmapcontrol.get_Layer(k) as IFeatureLayer;
+                }
+            }
+
+            //空间参考
+            esriSpatialRelEnum pesriSpatialRelEnum=SpatialRelConvert(comboBox2.GetItemText(comboBox2.SelectedItem));
+
+
+            //空间位置判断
+            if (pyuanLyaer!=null&&player.Length>=1)
+            {           
+
+                ISpatialFilter pISpatialFilter = new SpatialFilterClass();
+                for (int i = 0; i <player.Length&&player[i]!=null; i++)
+                {
+                    IFeatureCursor pFeatureCursor = pyuanLyaer.FeatureClass.Search(null, true);
+                    IFeature pfeature = pFeatureCursor.NextFeature();
+                    IFeatureSelection pIFeatureSelection = player[i] as   IFeatureSelection;
+                    while (pfeature!=null)
+                    {
+                        pISpatialFilter.Geometry = pfeature.ShapeCopy;
+                        pISpatialFilter.SpatialRel = pesriSpatialRelEnum;
+                        pIFeatureSelection.SelectFeatures(pISpatialFilter as IQueryFilter,esriSelectionResultEnum.esriSelectionResultAdd,true );
+                        pfeature = pFeatureCursor.NextFeature();
+                    }                 
+                }
+                pmapcontrol.Refresh();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("请至少选择一个目标图层，原图层和空间关系方式！");
+            }
         }
 
         private void SelectByLocation_Load(object sender, EventArgs e)

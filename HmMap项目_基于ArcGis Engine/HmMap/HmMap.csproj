@@ -144,6 +144,12 @@
     <Compile Include="Attribute.Designer.cs">
       <DependentUpon>Attribute.cs</DependentUpon>
     </Compile>
+    <Compile Include="Buffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buffer.Designer.cs">
+      <DependentUpon>Buffer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Distinguish.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +243,9 @@
     </Compile>
     <EmbeddedResource Include="Attribute.resx">
       <DependentUpon>Attribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buffer.resx">
+      <DependentUpon>Buffer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Distinguish.resx">
       <DependentUpon>Distinguish.cs</DependentUpon>

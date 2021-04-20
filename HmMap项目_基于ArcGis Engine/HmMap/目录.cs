@@ -91,7 +91,7 @@ namespace HmMap
         {                   
             if (layer_Toccontrol == null) return;
             (mapcontrol.Map as IActiveView).Extent = layer_Toccontrol.AreaOfInterest;
-            (mapcontrol.Map as IActiveView).PartialRefresh(esriViewDrawPhase.esriViewGraphics,null,null);
+            mapcontrol.Refresh();
         }
 
         //打开属性

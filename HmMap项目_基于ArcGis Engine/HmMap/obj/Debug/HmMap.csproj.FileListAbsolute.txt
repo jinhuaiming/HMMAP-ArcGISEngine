@@ -81,3 +81,4 @@ D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis En
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.symbol.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.EagleEye.resources
 D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.SelectByLocation.resources
+D:\Program Files (x86)\Git\仓库\HMMAP-ArcGISEngine\HmMap项目_基于ArcGis Engine\HmMap\obj\Debug\HmMap.Buffer.resources

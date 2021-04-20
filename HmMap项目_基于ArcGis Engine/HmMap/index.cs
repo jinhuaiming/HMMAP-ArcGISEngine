@@ -266,10 +266,14 @@ namespace HmMap
                 return;
             }
             IMapDocument mapdocunment = new MapDocumentClass();
-            mapdocunment.Open(axMapControl1.DocumentFilename);
-            mapdocunment.ReplaceContents(axMapControl1.Map as IMxdContents);
-            mapdocunment.Save();
-            MessageBox.Show("保存成功!", "提示", MessageBoxButtons.OK);
+            saveFileDialog1.Filter = "工程文件mxd|(*.mxd)";
+            if (saveFileDialog1.ShowDialog()==DialogResult.OK)
+            {             
+                mapdocunment.Open(saveFileDialog1.FileName);
+                mapdocunment.ReplaceContents(axMapControl1.Map as IMxdContents);
+                mapdocunment.Save();
+                MessageBox.Show("保存成功!", "提示", MessageBoxButtons.OK);
+            } 
         }
 
         //地图文档另存为；
@@ -488,9 +492,9 @@ namespace HmMap
 
         private void 按位置查询ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IFeatureLayer pyuan = axMapControl1.get_Layer(0) as IFeatureLayer;//第一个图层，圆。
-            IFeatureLayer ppoint = axMapControl1.get_Layer(1) as IFeatureLayer;//第二个图层，点。
-            IFeatureSelection ptioa = pyuan as IFeatureSelection;//源图层
+            IFeatureLayer pyuan = axMapControl1.get_Layer(0) as IFeatureLayer;
+            IFeatureLayer ppoint = axMapControl1.get_Layer(1) as IFeatureLayer;
+            IFeatureSelection ptioa = pyuan as IFeatureSelection;
 
             IFeatureCursor pFeatureCursor = ppoint.FeatureClass.Search(null,true);
             IFeature pFeature=pFeatureCursor.NextFeature();
@@ -512,16 +516,10 @@ namespace HmMap
                 pSelectByLocation.ShowDialog();
         }
 
-        private void axMapControl1_OnViewRefreshed(object sender, IMapControlEvents2_OnViewRefreshedEvent e)
+        private void 缓冲区ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (axMapControl1.LayerCount>1)
-	            {
-		             ToolStripMenuItem1.Enabled=true;
-	            }
-            else
-            {
-                ToolStripMenuItem1.Enabled = false;
-            }
+            Form buffer = new Buffer(axMapControl1);
+            buffer.ShowDialog();
         }
 
         }
