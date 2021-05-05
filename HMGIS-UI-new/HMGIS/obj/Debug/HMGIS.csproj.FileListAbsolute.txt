@@ -1,0 +1,10 @@
+G:\桌面\HMGIS\HMGIS\bin\Debug\HMGIS.exe.config
+G:\桌面\HMGIS\HMGIS\bin\Debug\HMGIS.exe
+G:\桌面\HMGIS\HMGIS\bin\Debug\HMGIS.pdb
+G:\桌面\HMGIS\HMGIS\obj\Debug\HMGIS.csprojResolveAssemblyReference.cache
+G:\桌面\HMGIS\HMGIS\obj\Debug\HMGIS.Form1.resources
+G:\桌面\HMGIS\HMGIS\obj\Debug\HMGIS.Properties.Resources.resources
+G:\桌面\HMGIS\HMGIS\obj\Debug\HMGIS.csproj.GenerateResource.Cache
+G:\桌面\HMGIS\HMGIS\obj\Debug\HMGIS.exe.licenses
+G:\桌面\HMGIS\HMGIS\obj\Debug\HMGIS.exe
+G:\桌面\HMGIS\HMGIS\obj\Debug\HMGIS.pdb
